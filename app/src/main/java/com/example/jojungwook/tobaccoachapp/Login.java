@@ -6,7 +6,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.ImageButton;
 import android.widget.TextView;
-import android.widget.Toast;
 
 public class Login extends AppCompatActivity {
     @Override
@@ -24,13 +23,13 @@ public class Login extends AppCompatActivity {
         LoginBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(inputText.toString().equals("jo") && inputPass.toString().equals("1234")) {
+                //if(inputText.toString().equals("jo")) {
                     Intent intent = new Intent(getApplicationContext(), State.class);
                     startActivity(intent);
-                }
-                else {
-                    Toast.makeText(Login.this, "아이디 또는 비밀번호를 확인하세요.", Toast.LENGTH_SHORT).show();
-                }
+//                }
+//                else {
+//                    Toast.makeText(Login.this, "아이디 또는 비밀번호를 확인하세요.", Toast.LENGTH_SHORT).show();
+//                }
             }
         });
         SignUpBtn.setOnClickListener(new View.OnClickListener(){

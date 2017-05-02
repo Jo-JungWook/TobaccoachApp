@@ -19,6 +19,5 @@ public class SignUp extends Activity{
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_dropdown_item, str); //ArrayAdapter객체를 생성해서 레이아웃과 데이터 매핑
         Spinner s = (Spinner) findViewById(R.id.spinner);    //
         s.setAdapter(adapter);
-
     }
 }

@@ -5,8 +5,8 @@
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.jojungwook.tobaccoachapp.Login"
-    android:background="@color/colorAccent">
+    android:background="@color/colorPrimary"
+    tools:context="com.example.jojungwook.tobaccoachapp.Login">
 
     <CheckBox
         android:id="@+id/checkBox"
@@ -17,16 +17,15 @@
         android:layout_below="@+id/InputPass"
         android:layout_marginTop="12dp"
         android:checked="false"
-        android:text="Keep logged in"
-        />
+        android:text="Keep logged in" />
 
     <ImageView
+        android:id="@+id/imageView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:srcCompat="@drawable/title"
-        android:id="@+id/imageView"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        app:srcCompat="@drawable/title" />
 
     <EditText
         android:id="@+id/InputPass"
@@ -42,13 +41,13 @@
         android:password="true" />
 
     <ImageView
+        android:id="@+id/imageView5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:srcCompat="@drawable/line"
-        android:id="@+id/imageView5"
-        android:layout_alignTop="@+id/InputPass"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/InputPass"
+        app:srcCompat="@drawable/line" />
 
     <EditText
         android:id="@+id/InputID"
@@ -65,13 +64,13 @@
         android:singleLine="true" />
 
     <ImageView
+        android:id="@+id/line"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:srcCompat="@drawable/line"
-        android:id="@+id/line"
-        android:layout_alignTop="@+id/InputID"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/InputID"
+        app:srcCompat="@drawable/line" />
 
     <ImageButton
         android:id="@+id/SignUpBtn"
