@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="seungchan.com.tobaccoach_5_2.MyDeviceScanActivity">
+
+</android.support.constraint.ConstraintLayout>-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary">
+
+    <Button
+        android:id="@+id/connect_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/tobaccoach_connect_button"
+        android:enabled="false"
+        android:focusableInTouchMode="true"
+        android:onClick="oneButtonConnection"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:id="@+id/my_device_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/connect_btn"
+        android:gravity="center"
+        android:text="my device name" />
+
+    <TextView
+        android:id="@+id/my_device_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/my_device_name"
+        android:gravity="center"
+        android:text="my device address" />
+
+    <!--<TextView
+        android:id="@+id/text_team_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+        android:gravity="center"
+        android:text="@string/team_name"
+        android:textSize="12dp" />
+
+    <TextView
+        android:id="@+id/text_team_introduction"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/text_team_name"
+        android:layout_marginBottom="30dp"
+        android:gravity="center"
+        android:text="@string/team_introduction"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="20dp"
+        android:textStyle="italic" />-->
+
+
+</RelativeLayout>

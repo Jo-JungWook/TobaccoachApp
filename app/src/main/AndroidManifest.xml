@@ -2,6 +2,24 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.jojungwook.tobaccoachapp">
 
+    <uses-sdk
+        android:minSdkVersion="15"
+        android:maxSdkVersion="18"
+        />
+    <!--
+        블루투스 BLE만 사용할거라면 아래와 같이 manifest에 포함시켜야 한다.
+    -->
+    <uses-feature
+        android:name="android.hardware.bluetooth_le"
+        android:required="true" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!--
+        BLUETOOTH : 커넥션 요구, 커넥션 수락, 데이터 전송 등의 블루투스 통신을 하기 위해 필요한 권한
+        BLUETOOTH_ADMIN : 디바이스 검색 시작, 블루투스 설정을 조작하기 위해 필요 (BLUETOOTH_ADMIN 권한을 사용하려면 BLUETOOTH 권한도 꼭 있어야 한다.)
+    -->
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -16,15 +34,13 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Login">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
         <activity android:name=".SignUp" />
         <activity android:name=".State" />
+        <activity android:name=".deviceServiceController.DeviceControlActivity"/>
+        <activity android:name=".MyDeviceScanActivity"/>
+        <activity android:name=".noDeploy.DeviceSettingActivity"/>
+        <activity android:name=".deviceServiceController.MyDeviceController"
+            android:label="@string/title_activity_my_device_controller"/>
 
     </application>
 

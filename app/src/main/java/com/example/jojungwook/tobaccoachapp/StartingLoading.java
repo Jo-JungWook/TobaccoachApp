@@ -5,6 +5,8 @@ import android.os.Bundle;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 
+import com.example.jojungwook.tobaccoachapp.noDeploy.DeviceSettingActivity;
+
 public class StartingLoading extends AppCompatActivity {
     private ActionBar actionBar;
         @Override
@@ -22,7 +24,7 @@ public class StartingLoading extends AppCompatActivity {
                     } catch (InterruptedException e) {
                         e.printStackTrace();
                     }
-                    Intent intent = new Intent(getApplicationContext(), Login.class);
+                    Intent intent = new Intent(getApplicationContext(), DeviceSettingActivity.class);
                     startActivity(intent);
 
                     finish();
